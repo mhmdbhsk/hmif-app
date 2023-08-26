@@ -1,5 +1,3 @@
-import { DesktopNavigation } from "@/components";
-
 export function DesktopHeader() {
   return (
     <div className="flex border-b py-3">

@@ -38,6 +38,7 @@ export function DesktopFooter() {
                 href={social.url}
                 className="cursor-pointer text-sm text-gray-500 hover:text-black"
                 key={social.title}
+                target="_blank"
               >
                 {social.title}
               </Link>

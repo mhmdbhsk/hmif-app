@@ -1,4 +1,6 @@
-import { Card, CardContent, CardHeader, Ribbon } from "@/components";
+import { Card, CardContent, CardHeader } from "@/components";
+import { appNavigationConfig } from "@/configs";
+import Link from "next/link";
 
 export default function Home() {
   return (
@@ -9,11 +11,17 @@ export default function Home() {
         </span>
 
         <div className="flex w-full space-x-2 py-12">
-          {[1, 2, 3, 4].map((item) => (
-            <Card key={item} className="flex flex-1 shadow-none">
-              <CardHeader>DMW++</CardHeader>
-              <CardContent></CardContent>
-            </Card>
+          {appNavigationConfig.map((item) => (
+            <Link
+              href={item.path}
+              key={item.title}
+              className="hover: w-full hover:translate-x-1 hover:translate-y-1"
+            >
+              <Card className="flex flex-1 shadow-none">
+                <CardHeader>{item.title}</CardHeader>
+                <CardContent></CardContent>
+              </Card>
+            </Link>
           ))}
         </div>
       </div>

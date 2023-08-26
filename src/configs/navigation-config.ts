@@ -77,3 +77,31 @@ export const navigationConfig = [
     icon: IconAddressBook,
   },
 ];
+
+export const appNavigationConfig = [
+  {
+    title: "DMW++",
+    path: "/dmw",
+    icon: IconHome2,
+  },
+  {
+    title: "Bukulink",
+    path: "/bukulink",
+    icon: IconHome2,
+  },
+  {
+    title: "DBO",
+    path: "/dbo",
+    icon: IconHome2,
+  },
+  {
+    title: "IOS",
+    path: "/ios",
+    icon: IconHome2,
+  },
+  {
+    title: "iojek",
+    path: "/iojek",
+    icon: IconHome2,
+  },
+];

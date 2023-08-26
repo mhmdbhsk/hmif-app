@@ -1,5 +1,4 @@
 import { navigationConfig } from "@/configs";
-import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
