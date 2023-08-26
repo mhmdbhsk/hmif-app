@@ -10,9 +10,9 @@ export function DesktopHeader() {
           </span>
         </div>
 
-        <div>
+        {/* <div>
           <DesktopNavigation />
-        </div>
+        </div> */}
       </div>
     </div>
   );

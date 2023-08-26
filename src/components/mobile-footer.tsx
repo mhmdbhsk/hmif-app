@@ -1,3 +1,5 @@
+import { Ribbon } from "./ribbon";
+
 export function MobileFooter() {
-  return <div className="">MobileFooter</div>;
+  return <div>MobileFooter</div>;
 }

@@ -1,10 +1,15 @@
+import { socialConfig } from "@/configs/social-config";
+import { Ribbon } from "./ribbon";
+import Link from "next/link";
+
 export function DesktopFooter() {
   return (
-    <div className="flex border-t py-3">
-      <div className="container flex w-full max-w-screen-md justify-between py-10">
-        <div className="flex flex-1 flex-col gap-4">
+    <div className="relative mt-12 flex flex-col py-3">
+      <Ribbon />
+      <div className="container mt-20 flex w-full max-w-screen-md justify-between py-10">
+        <div className="flex flex-1 flex-col gap-4 text-gray-500">
           <div>
-            <span className="font-medium">Hubungi Kami</span>
+            <span className="font-medium text-black">Hubungi Kami</span>
           </div>
           <div className="flex flex-col gap-2">
             <span className="text-sm">
@@ -16,8 +21,8 @@ export function DesktopFooter() {
             </span>
             <span className="text-sm">
               {" "}
-              0822-9845-2837 (Made)
-              <br /> 081229750812 (Ingkafi)
+              +62 895-4107-57890 (Nafis)
+              <br /> +62 821-4618-4680 (Dhimas)
             </span>
             <span className="text-sm">hmif@student.undip.ac.id</span>
           </div>
@@ -28,13 +33,15 @@ export function DesktopFooter() {
             <span className="font-medium">Akun Kami</span>
           </div>
           <div className="flex flex-col gap-2">
-            <span className="text-sm">Facebook</span>
-            <span className="text-sm">Twitter</span>
-            <span className="text-sm">YouTube</span>
-            <span className="text-sm">Line</span>
-            <span className="text-sm">Instagram</span>
-            <span className="text-sm">Email</span>
-            <span className="text-sm">Spotify</span>
+            {socialConfig.map((social) => (
+              <Link
+                href={social.url}
+                className="cursor-pointer text-sm text-gray-500 hover:text-black"
+                key={social.title}
+              >
+                {social.title}
+              </Link>
+            ))}
           </div>
         </div>
       </div>
