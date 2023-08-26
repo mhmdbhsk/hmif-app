@@ -81,27 +81,27 @@ export const navigationConfig = [
 export const appNavigationConfig = [
   {
     title: "DMW++",
-    path: "/dmw",
+    path: "/",
     icon: IconHome2,
   },
   {
     title: "Bukulink",
-    path: "/bukulink",
+    path: "/",
     icon: IconHome2,
   },
   {
     title: "DBO",
-    path: "/dbo",
+    path: "/",
     icon: IconHome2,
   },
   {
     title: "IOS",
-    path: "/ios",
+    path: "/",
     icon: IconHome2,
   },
   {
     title: "iojek",
-    path: "/iojek",
+    path: "/",
     icon: IconHome2,
   },
 ];
