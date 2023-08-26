@@ -13,12 +13,12 @@ Bukulink, DBO, and the main website.
   - #### Chrome/Edge/Arc/Mozilla/Brave/or any browser you want.
   - #### Node.js
     - You can download Node.js [here](https://nodejs.org/en/download/)
-    - Or you can install Node.js using [nvm](
+    - Or you can install Node.js using [nvm](https://github.com/nvm-sh/nvm)
   - #### Yarn
     - You can download Yarn [here](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
     - Or you can install Yarn using [npm](https://www.npmjs.com/package/yarn)
 
-- #### Installation
+- ### Installation
   - You can clone this repository using `git clone https://github.com/mhmdbhsk/hmif-app`
   - Then change directory to the repository folder using `cd hmif-app`
   - Clone the .env.example file and rename it to .env, then fill in the required environment variables
