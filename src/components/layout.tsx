@@ -8,9 +8,13 @@ interface LayoutProps {
 export function Layout({ children }: LayoutProps) {
   return (
     <div>
-      <DesktopContainer>{children}</DesktopContainer>
+      <div className="hidden w-full sm:flex">
+        <DesktopContainer>{children}</DesktopContainer>
+      </div>
 
-      <MobileContainer>{children}</MobileContainer>
+      <div className="flex w-full sm:hidden">
+        <MobileContainer>{children}</MobileContainer>
+      </div>
     </div>
   );
 }

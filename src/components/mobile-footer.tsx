@@ -1,3 +1,3 @@
 export function MobileFooter() {
-  return <div>MobileFooter</div>;
+  return <div className="">MobileFooter</div>;
 }

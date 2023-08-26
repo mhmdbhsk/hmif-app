@@ -1,27 +1,43 @@
+import {
+  IconAddressBook,
+  IconArticle,
+  IconCalendar,
+  IconHome2,
+  IconMedal,
+  IconPhoto,
+  IconUserHexagon,
+} from "@tabler/icons-react";
+
 export const navigationConfig = [
   {
     title: "Beranda",
     path: "/",
+    icon: IconHome2,
   },
   {
     title: "Agenda",
     path: "/agenda",
+    icon: IconCalendar,
   },
   {
     title: "Artikel",
     path: "/article",
+    icon: IconArticle,
   },
   {
     title: "Galeri",
     path: "/gallery",
+    icon: IconPhoto,
   },
   {
     title: "Prestasi",
     path: "/achievement",
+    icon: IconMedal,
   },
   {
     title: "Tentang Kami",
     path: "/about-us",
+    icon: IconUserHexagon,
     subMenu: [
       {
         title: "Profil",
@@ -58,5 +74,6 @@ export const navigationConfig = [
   {
     title: "Kontak",
     path: "/contact",
+    icon: IconAddressBook,
   },
 ];

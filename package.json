@@ -1,5 +1,5 @@
 {
-  "name": "ios-hmif",
+  "name": "hmif-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -38,6 +38,7 @@
     "@radix-ui/react-toggle": "^1.0.3",
     "@radix-ui/react-tooltip": "^1.0.6",
     "@t3-oss/env-nextjs": "^0.3.1",
+    "@tabler/icons-react": "^2.31.0",
     "axios": "^1.4.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",

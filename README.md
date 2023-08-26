@@ -1,28 +1,54 @@
-# Create T3 App
+## HMIF Super App Documentation
 
-This is a [T3 Stack](https://create.t3.gg/) project bootstrapped with `create-t3-app`.
+<p>This is repository of project HMIF's Undip Super Apps</p>
+We have developed HMIF Superapps using Next.js, React.js, and Tailwind CSS. This application
+is a web application that can be accessed by all HMIF Undip members. This application is a
+combination of several applications that have been developed by HMIF Undip, such as DMW++,
+Bukulink, DBO, and the main website.
 
-## What's next? How do I make an app with this?
+### How to develop this application
 
-We try to keep this project as simple as possible, so you can start with just the scaffolding we set up for you, and add additional things later when they become necessary.
+- ### Prerequisites
 
-If you are not familiar with the different technologies used in this project, please refer to the respective docs. If you still are in the wind, please join our [Discord](https://t3.gg/discord) and ask for help.
+  - #### Chrome/Edge/Arc/Mozilla/Brave/or any browser you want.
+  - #### Node.js
+    - You can download Node.js [here](https://nodejs.org/en/download/)
+    - Or you can install Node.js using [nvm](
+  - #### Yarn
+    - You can download Yarn [here](https://classic.yarnpkg.com/en/docs/install/#windows-stable)
+    - Or you can install Yarn using [npm](https://www.npmjs.com/package/yarn)
 
-- [Next.js](https://nextjs.org)
-- [NextAuth.js](https://next-auth.js.org)
-- [Prisma](https://prisma.io)
-- [Tailwind CSS](https://tailwindcss.com)
-- [tRPC](https://trpc.io)
+- #### Installation
+  - You can clone this repository using `git clone https://github.com/mhmdbhsk/hmif-app`
+  - Then change directory to the repository folder using `cd hmif-app`
+  - Clone the .env.example file and rename it to .env, then fill in the required environment variables
+  - Install all dependencies using `yarn`
+  - And run the development server using `yarn dev`
 
-## Learn More
+### How to contribute to this application
 
-To learn more about the [T3 Stack](https://create.t3.gg/), take a look at the following resources:
+- Fork this repository
+- Clone your forked repository
+- Create a new branch
+- Make some changes
+- Commit your changes
+- Push your changes
+- Create a pull request
+- Wait for the review
+- And your changes will be merged
 
-- [Documentation](https://create.t3.gg/)
-- [Learn the T3 Stack](https://create.t3.gg/en/faq#what-learning-resources-are-currently-available) — Check out these awesome tutorials
+### Feature ( To Do )
 
-You can check out the [create-t3-app GitHub repository](https://github.com/t3-oss/create-t3-app) — your feedback and contributions are welcome!
+- [ ] **DMW++**, DMW++ is the agenda of the Diklat division that contains all about assignments and exams.
+- [ ] **Bukulink**, Bukulink is a platform for obtaining alumni information and etc.
+- [ ] **DBO**, DBO is a platform to view information about HMIF's family.
+- [ ] **Main Website**, Main Website is the main page used as a company profile of HMIF Undip.
 
-## How do I deploy this?
+### Library
 
-Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/vercel), [Netlify](https://create.t3.gg/en/deployment/netlify) and [Docker](https://create.t3.gg/en/deployment/docker) for more information.
+- [shadcn/ui](https://ui.shadcn.com/)
+- [next-auth](https://next-auth.js.org/)
+- [vaul](https://github.com/emilkowalski/vaul)
+- [axios](https://axios-http.com/)
+- [react-hook-form](https://www.react-hook-form.com/)
+- {...others}
