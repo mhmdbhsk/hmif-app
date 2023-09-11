@@ -8,3 +8,4 @@ export * from "./layout";
 export * from "./desktop-navigation";
 export * from "./ui";
 export * from "./ribbon";
+export * from "./language-selector";

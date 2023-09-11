@@ -11,9 +11,11 @@ export function MobileContainer({ children }: MobileContainerProps) {
     <div className="w-full max-w-screen-md flex-col justify-between">
       <MobileHeader />
 
-      <div className="flex flex-col">{children}</div>
+      <div>
+        <div className="mt-[74px] min-h-max flex-1">{children}</div>
+      </div>
 
-      <MobileFooter />
+      {/* <MobileFooter /> */}
 
       <MobileNavigation />
     </div>

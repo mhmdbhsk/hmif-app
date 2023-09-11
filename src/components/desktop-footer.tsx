@@ -4,9 +4,11 @@ import Link from "next/link";
 
 export function DesktopFooter() {
   return (
-    <div className="relative mt-12 flex flex-col py-3">
-      <Ribbon />
-      <div className="container mt-20 flex w-full max-w-screen-md justify-between py-10">
+    <footer className="relative mt-12 flex flex-col py-3">
+      <div className="absolute left-0 right-0 top-0 -mt-4 h-fit w-screen">
+        <Ribbon />
+      </div>
+      <div className="desktop-container mt-20 flex w-full flex-row justify-between py-10">
         <div className="flex flex-1 flex-col gap-4 text-gray-500">
           <div>
             <span className="font-medium text-black">Hubungi Kami</span>
@@ -36,16 +38,22 @@ export function DesktopFooter() {
             {socialConfig.map((social) => (
               <Link
                 href={social.url}
-                className="cursor-pointer text-sm text-gray-500 hover:text-black"
+                className="flex cursor-pointer items-center gap-2 text-sm text-gray-500 hover:text-black"
                 key={social.title}
                 target="_blank"
               >
+                <social.icon size={20} stroke={1.3} />
                 {social.title}
               </Link>
             ))}
           </div>
         </div>
       </div>
-    </div>
+      <div className="desktop-container flex justify-center">
+        <span className="my-4 text-center text-sm text-gray-400">
+          © 2023 HMIF App. All rights reserved.
+        </span>
+      </div>
+    </footer>
   );
 }

@@ -7,7 +7,7 @@ interface LayoutProps {
 
 export function Layout({ children }: LayoutProps) {
   return (
-    <div>
+    <div className="scroll-smooth antialiased">
       <div className="hidden w-full sm:flex">
         <DesktopContainer>{children}</DesktopContainer>
       </div>
